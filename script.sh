@@ -1,8 +1,11 @@
 #!/bin/bash
-for i in {1..43997}
+counter=0
+for i in {55..43997}
 do
     echo "Guardando data $i de 23997 "
     node app.js $i
-    sleep 2
+    sleep 9
+    counter=$(i)
 done
-#502
+echo counter
+#18
